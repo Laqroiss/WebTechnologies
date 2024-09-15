@@ -215,30 +215,29 @@ main {
     border-radius: 5px;
 }
 
-/* Container for section content (splitting into two halves) */
+
 .section-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align text to the top */
+    align-items: flex-start; 
     padding: 20px 0;
 }
 
-/* Left column: Text */
+
 .text-column {
-    flex: 1; /* Takes up 50% of the width */
+    flex: 1; 
     margin-right: 20px;
 }
 
-/* Right column: Image */
+
 .image-column {
-    flex: 1; /* Takes up 50% of the width */
+    flex: 1; 
     display: flex;
-    flex-direction: column; /* Stack images vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
 
-/* Image styling */
 .artist-image {
     max-width: 100%;
     height: auto;
@@ -246,10 +245,10 @@ main {
     border-radius: 5px;
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
     .section-content {
-        flex-direction: column; /* Stack text and images vertically on small screens */
+        flex-direction: column;
     }
 
     .text-column, .image-column {
@@ -263,15 +262,14 @@ main {
     }
 }
 
-/* Flexbox container for sections */
+
 .flex-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Space between the two sections */
+    gap: 20px; 
     margin: 20px 0;
 }
 
-/* Each genre-section should take up equal space */
 .genre-section {
     flex: 1;
     background-color: #f9f9f9;
@@ -281,7 +279,6 @@ main {
     overflow: hidden;
 }
 
-/* Add this for the image to fit inside each section properly */
 .genre-section img {
     width: 100%;
     height: auto;
@@ -289,13 +286,13 @@ main {
     border-radius: 5px;
 }
 
-/* Styling for each section box */
+
 .box {
     display: flex;
     flex-direction: column;
 }
 
-/* Article box for better readability */
+
 .article-box {
     margin-bottom: 20px;
     padding: 10px;
@@ -304,38 +301,23 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-    }
-}
-/* Flexbox container for sections */
+
 .flex-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Spacing between sections */
+    gap: 20px; 
     margin: 20px 0;
 }
 
-/* Each box is flexible and will take up 50% of the width */
+
 .box {
     flex: 1;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 0; /* Ensures proper scaling */
+    min-width: 0; 
 }
-
-/* Responsive behavior for mobile devices */
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column; /* Stacks sections vertically on smaller screens */
-    }
-}
-
-/* Add this CSS to your styles.css file */
 
 .contact-form label {
     display: flex;
@@ -343,11 +325,11 @@ main {
 }
 
 .contact-form input[type="checkbox"] {
-    margin-right: 8px; /* Adjust spacing between checkbox and label text */
+    margin-right: 8px; 
 }
 
 .contact-form input[type="submit"] {
-    margin-top: 10px; /* Adjust spacing above the submit button */
+    margin-top: 10px; 
 }
 
 .mainpage {
