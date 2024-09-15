@@ -1,0 +1,359 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+#header-section {
+    background-color: #b13c76;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-heading {
+    font-size: 2em;
+}
+
+#navbar {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.genre-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ff9800;
+}
+
+.genre-link:hover {
+    color: #ff9800;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0288D1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0277BD;
+}
+
+#footer-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.timeline-section {
+    padding: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    border-left: 4px solid #333;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#intro-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#intro-section h2 {
+    font-size: 1.8em;
+}
+
+#intro-section p {
+    font-size: 1.1em;
+}
+
+#genres-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#genres-section h2 {
+    font-size: 1.8em;
+}
+
+.genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.genre-box {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genre-box h3 {
+    margin-top: 0;
+}
+
+.box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Container for section content (splitting into two halves) */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text to the top */
+    padding: 20px 0;
+}
+
+/* Left column: Text */
+.text-column {
+    flex: 1; /* Takes up 50% of the width */
+    margin-right: 20px;
+}
+
+/* Right column: Image */
+.image-column {
+    flex: 1; /* Takes up 50% of the width */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.artist-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column; /* Stack text and images vertically on small screens */
+    }
+
+    .text-column, .image-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .artist-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Flexbox container for sections */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two sections */
+    margin: 20px 0;
+}
+
+/* Each genre-section should take up equal space */
+.genre-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Add this for the image to fit inside each section properly */
+.genre-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for each section box */
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Article box for better readability */
+.article-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+/* Flexbox container for sections */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Spacing between sections */
+    margin: 20px 0;
+}
+
+/* Each box is flexible and will take up 50% of the width */
+.box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 0; /* Ensures proper scaling */
+}
+
+/* Responsive behavior for mobile devices */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stacks sections vertically on smaller screens */
+    }
+}
+
+/* Add this CSS to your styles.css file */
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 8px; /* Adjust spacing between checkbox and label text */
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 10px; /* Adjust spacing above the submit button */
+}
+
+.mainpage {
+    width: 220px;
+}
+
+.mainpage:hover {
+    transform: scale(1.05);
+}
