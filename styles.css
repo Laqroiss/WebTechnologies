@@ -134,7 +134,7 @@ main {
 .timeline {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 300px;
 }
 
 .timeline-item {
